@@ -79,7 +79,7 @@ def quit_driver(driver):
     """Закрывает браузер."""
     driver.quit()
 
-def scrape_jobs(url="https://jobstash.xyz/jobs", chrome_driver_path="chromedriver/chromedriver.exe", headless=True, max_pages=2):
+def scrape_jobs(url="https://jobstash.xyz/jobs", chrome_driver_path="chromedriver.exe", headless=True, max_pages=2):
     """Основная функция для запуска парсинга вакансий."""
     driver = init_driver(chrome_driver_path, headless)
     try:

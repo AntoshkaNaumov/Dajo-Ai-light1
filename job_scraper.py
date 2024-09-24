@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 import time
 
-def init_driver(chrome_driver_path="chromedriver/chromedriver.exe", headless=True):
+def init_driver(chrome_driver_path="chromedriver.exe", headless=True):
     """Инициализирует веб-драйвер с опциональными настройками для headless режима."""
     chrome_options = Options()
     if headless:

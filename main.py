@@ -556,7 +556,7 @@ async def send_message_with_retry(bot, chat_id, text):
 # Функция для публикации вакансий ботом
 async def publish_jobs():
     # Парсинг данных с нескольких сайтов
-    driver_path = "chromedriver/chromedriver.exe"
+    driver_path = "chromedriver.exe"
     jobs_site_1 = scrape_jobs(url="https://jobstash.xyz/jobs", chrome_driver_path=driver_path,
                               headless=True, max_pages=5)
 

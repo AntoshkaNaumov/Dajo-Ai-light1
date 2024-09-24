@@ -23,8 +23,6 @@ from pars_job_degencrypto import scrape_jobs_4
 
 # Установите ваш API-ключи
 TOKEN = '7415980925:AAEbwiRWGTOGuMQhazfWS8zGVCcwYEcMLuM'
-OPENAI_API_KEY = 'sk-proj-kEUip-CyUJBe7ZoiIm8iACgJic0fwFcojKJdwC7eR8-FWT8vrzlyQQw77lT3BlbkFJDUgLriLYDOVGLxfbjKOC' \
-                 'FyHQyGgIS6UKabrF7zm4GtDW1i16zQsliGINIA'
 
 
 bot = Bot(token=TOKEN)
@@ -48,9 +46,6 @@ conn.commit()
 
 # Scheduler для выполнения задач по расписанию
 scheduler = AsyncIOScheduler()
-
-# Хранилище для сообщений и сентимента
-message_sentiment_data = defaultdict(list)
 
 
 # Создание базы данных и таблицы
